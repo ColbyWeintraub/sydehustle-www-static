@@ -8,7 +8,7 @@ class App extends Component {
         <h1>SydeHustle</h1>
         <h2>Make your hustle.</h2>
         <p>Coming soon...<br></br>
-          <a href="mailto:colby@sydehustle.io">Contact our CEO</a>.
+          <strong><a href="mailto:colby@sydehustle.io">Contact our CEO.</a></strong>
         </p>
       </div>
     );

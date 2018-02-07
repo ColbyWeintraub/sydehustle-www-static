@@ -1,18 +1,18 @@
 h1 {
   text-align: center;
   margin-top: 1em;
-  font-size: 44px;
+  font-size: 50px;
 }
 
 h2 {
   text-align: center;
   color: gray;
-  font-size: 22px;
+  font-size: 25px;
   display: block;
 }
 
 p {
   margin-top: 2em;
   text-align: center;
-  font-weight: bold;
+  font-size: 18px;
 }
