@@ -1,0 +1,34 @@
+INITIAL_BRANCH="$(git rev-parse --abbrev-ref head)"
+
+echo "Stashing any changes in $INITIAL_BRANCH..."
+git stash
+
+echo "Switching to branch master..."
+git checkout master
+
+echo "Building app..."
+yarn build
+
+# Copy output of yarn to docs (GitHub pages directory)
+rm -rf docs
+mkdir docs
+cp -a build/. docs
+
+# Sanity check!
+echo 'sydehustle.io' > docs/CNAME
+
+# Only commit our build
+git reset .
+git add docs/*
+git commit -m "$(git log --pretty=format:'Deploy %h (%s)' -n 1)"
+
+echo "Pushing master branch to origin..."
+git push -u origin master
+
+echo "Switching back to $INITIAL_BRANCH..."
+git checkout $INITIAL_BRANCH
+
+echo "Popping any stashed changes..."
+git stash pop
+
+echo "Done."
