@@ -16,3 +16,10 @@ p {
   text-align: center;
   font-size: 18px;
 }
+
+.copyright-notice {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+}
