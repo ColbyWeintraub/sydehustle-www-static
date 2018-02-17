@@ -14,7 +14,7 @@ class App extends Component {
             <strong><a href="mailto:colby@sydehustle.io">Contact our CEO.</a></strong>
           </p>
 
-          <p id="copyright-notice" >Copyright 2018 SydeHustle Inc.</p>
+          <p id="copyright-notice">Copyright 2018 SydeHustle Inc.</p>
         </div>
       </div>
 
