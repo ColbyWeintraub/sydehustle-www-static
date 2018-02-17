@@ -7,11 +7,15 @@ class App extends Component {
       <div>
         <h1>SydeHustle</h1>
         <h2>Make your hustle happen</h2>
-        <p>Coming soon...<br></br>
-          <strong><a href="mailto:colby@sydehustle.io">Contact our CEO.</a></strong>
-        </p>
+        <img id="logo" src="./res/logo.png" alt="SydeHustle" width="90.5" height="120" />
 
-        <p className="copyright-notice">Copyright © 2018 SydeHustle Inc. All Rights Reserved.</p>
+        <div className="footer">
+          <p>Coming soon...<br></br>
+            <strong><a href="mailto:colby@sydehustle.io">Contact our CEO.</a></strong>
+          </p>
+
+          <p id="copyright-notice" >Copyright 2018 SydeHustle Inc.</p>
+        </div>
       </div>
 
     );
